@@ -1,0 +1,80 @@
+.book-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; /* Set the width of the container */
+    padding: 20px;
+    border: 1px solid #000000; /* Add a border for visibility */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Center the container */
+    background-color: #f9f9f9; /* Light background */
+
+}
+
+.left-part{
+    flex: 1;
+    max-width: 200px;
+}
+
+.left-part img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.right-part{
+    flex: 2;
+    margin-left: 30px;
+
+}
+
+.right-part a:link, a:visited{
+    text-decoration: none;
+    color: black;
+
+}
+
+.right-part a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.right-part p{
+    font-family: Tahoma, Verdana, sans-serif;
+    text-align: justify;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    width: 100%; /* Full-width container */
+    max-width: 500px; /* Limit the maximum width */
+    margin: 20px auto; /* Center horizontally */
+}
+
+.search-container form{
+    margin-left: auto;
+}
+
+.search-container input{
+    flex: 1; /* Allow input to take all available space */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+.search-container button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
