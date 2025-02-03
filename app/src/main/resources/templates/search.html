@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/css/search.css">
-  <title>Items in One Column</title>
+  <title>Search</title>
 </head>
 
 <body>
 
 <main>
 
+
   <div class="search-container">
+
+    <div class="home-button">
+      <form action="/" method="get">
+        <button type="submit">Go home</button>
+      </form>
+    </div>
+
     <form action="/search" method="get">
       <input type="search" name="q" placeholder="Search...">
-      <button>Search</button>
+      <button type="submit">Search</button>
     </form>
   </div>
 
