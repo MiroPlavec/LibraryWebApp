@@ -1,81 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px 0;
-            font-size: 1.5rem;
-        }
-
-        main {
-            display: flex;
-            flex: 1;
-            padding: 20px;
-            gap: 20px;
-        }
-
-        main .left {
-            flex: 1;
-        }
-
-        main .right {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        main img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
 </head>
 <body>
-<header>
-    Book Title
-</header>
 
-<main>
-    <div class="left">
-        <img src="/images/img.jpg" alt="Book Cover">
+<div class="container">
+    <div class="image-container">
+        <!-- Replace the src with the image of the book -->
     </div>
-
-    <div class="right">
-
+    <div class="text-container">
+        <h1><span th:text="${book.getTitle}"></span></h1>
+        <p><strong>Author:</strong> <span th:text="${book.getAuthor}"></span> </p>
+        <p><strong>Genre:</strong> Genre of the book</p>
+        <p><strong>Summary:</strong> This is a brief summary or description of the book. You can add details like the plot, characters, themes, or any other relevant information here. The text will be displayed on the right side of the image, providing a well-balanced layout for your page.</p>
     </div>
-</main>
+</div>
 
-<footer>
-    &copy; 2025 Book Website. All rights reserved.
-</footer>
 </body>
 </html>

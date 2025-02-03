@@ -13,11 +13,11 @@ public class SearchService {
     private static List<Book> booksAvailable = new LinkedList<>();
 
     static {
-        booksAvailable.add(new Book("Miro", "Be better"));
-        booksAvailable.add(new Book("Fero", "You can do it"));
-        booksAvailable.add(new Book("Fero", "You can do it"));
-        booksAvailable.add(new Book("Fero", "You can do it"));
-        booksAvailable.add(new Book("Fero", "You can do it"));
+        booksAvailable.add(new Book("Miro", "Be better", 1L));
+        booksAvailable.add(new Book("Fero", "You can do it", 2L));
+//        booksAvailable.add(new Book("Fero", "You can do it",));
+//        booksAvailable.add(new Book("Fero", "You can do it"));
+//        booksAvailable.add(new Book("Fero", "You can do it"));
     }
 
 

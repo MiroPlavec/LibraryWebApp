@@ -6,9 +6,10 @@ public class Book {
     private Long id;
     private String imagePath;
 
-    public Book(String author, String title) {
+    public Book(String author, String title, Long id) {
         this.author = author;
         this.title = title;
+        this.id = id;
     }
 
     public String getAuthor(){
