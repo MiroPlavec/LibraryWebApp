@@ -32,13 +32,13 @@
 
     <!-- left part is for image-->
     <div class="left-part">
-      <img src="/images/img.jpg" alt="book">
+      <img src="/images/img.jpg" alt="image of the book">
     </div>
 
     <!-- right part is for book information-->
     <div class="right-part">
-      <a href="">
-        <h1><sp th:text="${book.getTitle}"></sp></h1>
+      <a th:href="@{/book/{id}(id = ${book.getId})}">
+        <h1><span th:text="${book.getTitle}"></span></h1>
       </a>
 
       <h3>by <span th:text="${book.getAuthor}"></span></h3>
