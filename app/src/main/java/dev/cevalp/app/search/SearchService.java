@@ -25,19 +25,11 @@ public class SearchService {
 
         List<Book> matchedBooks = new LinkedList<>();
 
-        // if q is empty, return the x first books
-        if(q.isBlank()){
-            return booksAvailable.subList(0, 1);
-        }
-
-        q = q.strip();
-        q = q.toLowerCase();
-
+        // check if author q is in name title ...
         for(Book book : booksAvailable){
-
-            if(book.getAuthor().toLowerCase().contains(q)){
+            if(book.getAuthor().contains(q)){
                 matchedBooks.add(book);
-            } else if (book.getTitle().toLowerCase().contains(q)) {
+            } else if (book.getTitle().contains(q)) {
                 matchedBooks.add(book);
             }
         }

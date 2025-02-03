@@ -48,12 +48,9 @@
 .search-container{
     display: flex;
     align-items: center;
-    width: 70%; /* Full-width container */
+    width: 100%; /* Full-width container */
+    max-width: 500px; /* Limit the maximum width */
     margin: 20px auto; /* Center horizontally */
-}
-
-.search-container .home-button{
-    margin-left: 10px;
 }
 
 .search-container form{
